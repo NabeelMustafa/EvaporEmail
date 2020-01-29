@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>EVaporMail</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <div class="flexbox">
+  <% if current_user %>
+  <% end %>
+  <div class="page-content">
+    <%= yield %>
+    <div class="popup">
+      <div class="notice"><%= notice %></div>
+      <div class="alert"><%= alert %></div>
+      
+    </div>
+  </div>
+</div>
+  </body>
+</html>

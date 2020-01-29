@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>EVaporMail</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BeardedBear | Mail</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,400i,700,700i&display=swap" rel="stylesheet"/>
+    <%= stylesheet_link_tag    'dashboard', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'dashboard', 'data-turbolinks-track': 'reload' %>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+  </head>
+
+  <body class="body-container">
+    <div class="flexbox">
+      <div class="page-content">
+        <div class="popup">
+          <div class="notice"><%= notice %></div>
+          <div class="alert"><%= alert %></div>
+        </div>
+      </div>
+    </div>
+    <div class="app">
+      <%= yield %>
+    </div>
+  </body>
+</html>
